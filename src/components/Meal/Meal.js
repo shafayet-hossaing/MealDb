@@ -14,20 +14,20 @@ const Meal = (props) => {
             <Card>
                 <CardMedia
                     component="img"
-                    height="140"
+                    height="240"
                     image={strMealThumb}
                     alt={strMeal}
                 />
                 <CardContent>
-                    <Typography sx={{ fontSize: 12 }} variant="h6" gutterBottom component="div">
+                    <Typography variant="h6" gutterBottom component="div">
                         {strMeal}
                     </Typography>
-                    <Typography sx={{fontWeight: "medium"}} variant="body2" color="text.secondary">
+                    <Typography sx={{fontWeight: "medium", lineHeight: 1.3}} variant="h6" color="text.secondary">
                         {strInstructions.slice(0, 118)}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                        <Button onClick={getIndividualMeal} sx={{fontSize: 10}} variant="outlined" size="small">Details</Button>
+                        <Button onClick={getIndividualMeal} variant="outlined">Details</Button>
                 </CardActions>
             </Card>
         </Grid>

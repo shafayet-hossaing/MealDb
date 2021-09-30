@@ -26,20 +26,20 @@ const MealDetails = () => {
                                     <Card align="left">
                                         <CardMedia
                                             component="img"
-                                            height="140"
+                                            height="240"
                                             image={food.strMealThumb}
                                             alt={food.strMeal}
                                         />
                                         <CardContent>
-                                            <Typography sx={{ fontSize: 12 }} variant="h6" gutterBottom component="div">
+                                            <Typography variant="h6" gutterBottom component="div">
                                                 {food.strMeal}
                                             </Typography>
-                                            <Typography sx={{fontWeight: "medium"}} variant="body2" color="text.secondary">
+                                            <Typography sx={{fontWeight: "medium"}} variant="h6" color="text.secondary">
                                                 {food.strInstructions.slice(0, 118)}
                                             </Typography>
                                         </CardContent>
                                         <CardActions>
-                                        <Button onClick={getBack} sx={{fontSize: 10}} variant="outlined" size="small">See All Foods</Button>
+                                        <Button onClick={getBack} variant="outlined">See All Foods</Button>
                                         </CardActions>
                                     </Card>
                                 </Grid>

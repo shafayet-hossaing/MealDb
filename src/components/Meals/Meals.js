@@ -23,13 +23,15 @@ const Meals = () => {
         width: "50%",
         padding: "6px",
         borderRadius: "10px",
-        border: "2px solid #1976d2"
+        border: "3px solid #1976d2",
+        marginTop: "10px",
+        fontSize: "20px"
     }
     return (
         <div>
-            <Container fixed align="center">
+            <Container align="center">
             <input style={searchBox} onChange={searchBarhandle} placeholder="Search Your Meals" type="text" />
-                <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 8 }} direction="row">
+                <Grid align="left" container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 5 }} direction="row">
                     {
                         meals.map((meal, i) => <Meal key={i} meal={meal}></Meal>)
                     }

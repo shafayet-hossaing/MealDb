@@ -7,7 +7,7 @@ const Header = () => {
         color: "red"
       }
         const navStyle = {
-            marginTop: "15px",
+            marginTop: "25px",
             textAlign: "center"
         }
     const linkStyle = {
@@ -16,6 +16,7 @@ const Header = () => {
         marginRight: "14px",
         color: "#1976d2",
         fontWeight: "bold",
+        fontSize: "26px"
     }
       
     return (
